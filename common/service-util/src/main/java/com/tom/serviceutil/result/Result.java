@@ -36,7 +36,7 @@ public class Result<T> {
     }
 
     //成功的方法
-    public static<T> Result<T> success(T data) {
+    public static<T> Result<T> ok(T data) {
         Result<T> result = build(data, ResultCodeEnum.SUCCESS);
         return result;
     }
