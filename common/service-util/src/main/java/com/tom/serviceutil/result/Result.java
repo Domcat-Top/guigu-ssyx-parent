@@ -23,7 +23,7 @@ public class Result<T> {
     public static<T> Result<T> build(T data,ResultCodeEnum resultCodeEnum) {
         //创建Resullt对象，设置值，返回对象
         Result<T> result = new Result<>();
-        //判断返回结果中是否需要数据
+        //判断返回结果中是否需要数据---这个是否写反了
         if(data != null) {
             //设置数据到result对象
             result.setData(data);
@@ -36,7 +36,7 @@ public class Result<T> {
     }
 
     //成功的方法
-    public static<T> Result<T> ok(T data) {
+    public static<T> Result<T> success(T data) {
         Result<T> result = build(data, ResultCodeEnum.SUCCESS);
         return result;
     }

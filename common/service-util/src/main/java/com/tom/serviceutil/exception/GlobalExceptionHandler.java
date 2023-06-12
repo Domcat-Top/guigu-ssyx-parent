@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @date: 2023/6/9 10:26
  * @description: 全局异常处理
  */
-// 切面编程  AOP---出现异常给我切到这
+// 切面编程  AOP---出现异常切到这
 @ControllerAdvice
 public class GlobalExceptionHandler {
 

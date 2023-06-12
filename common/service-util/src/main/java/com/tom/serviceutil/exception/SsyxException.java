@@ -16,6 +16,7 @@ public class SsyxException extends RuntimeException{
     private Integer code;
 
     /**
+     * 可以看做这个是默认的构造函数，仅返回状态码，这个构造基本不用
      * 通过状态码和错误消息创建异常对象
      * @param message
      * @param code
@@ -26,6 +27,7 @@ public class SsyxException extends RuntimeException{
     }
 
     /**
+     * 主要用的是这个构造函数
      * 接收枚举类型对象
      * @param resultCodeEnum
      */
