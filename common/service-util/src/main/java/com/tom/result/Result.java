@@ -13,7 +13,7 @@ public class Result<T> {
     private Integer code;
     //信息
     private String message;
-    //数据
+    //数据---这里面携带的就很多，比如说分页的数据
     private T data;
 
     //构造私有化
